@@ -1,2 +1,2 @@
-input = get.to_i
+input = gets.to_i
 p input
