@@ -23,7 +23,7 @@ class Food
 
     @@foods.each do |food|
       puts "#{food.name} :#{food.calory}kcal"
-      all_calory = all_calory + food.calory
+      all_calory += food.calory
     end
     puts "#{all_calory}"
   end
