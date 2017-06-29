@@ -1,6 +1,11 @@
 class Food
   @@foods = []
 
+  def initialize(name,calory)
+    @name = name
+    @calory = calory
+  end
+
   def self.input
     puts "料理名を入力してください："
     name = gets.chomp
@@ -25,17 +30,13 @@ class Food
   end
 
 
-  def initialize(name,calory)
-    @name = name
-    @calory = calory
-  end
 
   def name
-    return @name
+    @name
   end
 
   def calory
-    return @calory
+    @calory
   end
 end
 
