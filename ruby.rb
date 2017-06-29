@@ -16,7 +16,6 @@ class Food
     @@foods << food
   end
 
-
   def self.show_all_calory
     all_calory = 0
     line = "-------------------------------------"
@@ -29,8 +28,6 @@ class Food
     puts "#{all_calory}"
   end
 
-
-
   def name
     @name
   end
@@ -39,7 +36,6 @@ class Food
     @calory
   end
 end
-
 
 while true do
   puts "[0]:カロリーを入力する"
