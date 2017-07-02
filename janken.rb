@@ -37,16 +37,17 @@ def jankensuruyo
   end
 end
 
-janken = true
+game = true
+
 puts " じゃんけん魔人X が現れた！"
 
-while janken do
+while game do
   puts "[1]戦う/[2]逃げる"
   input =gets.to_i
-   if input == 1
-    janken = jankensuruyo
-   else
-    puts "あなたは逃げた"
-     break
-  end
+    if input == 1
+     game = jankensuruyo
+    else
+     puts "あなたは逃げた"
+      break
+    end
 end
